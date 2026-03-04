@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "postinstall": "mkdir -p public/vim-wasm && cp node_modules/vim-wasm/vim.js node_modules/vim-wasm/vim.wasm node_modules/vim-wasm/vim.data public/vim-wasm/"
+    "preview": "npm run build && wrangler dev",
+    "postinstall": "mkdir -p public/vim-wasm && cp node_modules/vim-wasm/vim.js node_modules/vim-wasm/vim.wasm node_modules/vim-wasm/vim.data public/vim-wasm/",
+    "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.26.0",
     "typescript": "~5.9.3",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "wrangler": "^4.70.0"
   },
   "dependencies": {
     "vim-wasm": "^0.0.13"
