@@ -64,7 +64,7 @@ function showSignIn() {
       <h1>VimDocs</h1>
       <p class="subtitle">A real Vim editor backed by Google Drive</p>
       <button id="sign-in-btn">Sign in with Google</button>
-      <a class="privacy-link" href="/privacy.html">Privacy Policy</a>
+      <a class="privacy-link" href="/privacy.html">Privacy and Terms of Service</a>
     </div>
   `;
 
