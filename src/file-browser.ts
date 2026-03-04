@@ -193,8 +193,7 @@ async function handleNewFile() {
   if (!name) return;
 
   try {
-    const driveFile = await createFile(name, currentFolderId, '');
-    register(driveFile.id, driveFile.name, currentFolderId);
+    await createFile(name, currentFolderId, '');
     await loadFolder(currentFolderId);
     if (onNewFileCreated) onNewFileCreated();
   } catch (err) {
