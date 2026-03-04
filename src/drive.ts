@@ -8,6 +8,8 @@ export interface DriveFile {
   name: string;
   mimeType: string;
   parents?: string[];
+  size?: string;
+  modifiedTime?: string;
 }
 
 async function driveRequest(url: string, init?: RequestInit): Promise<Response> {
@@ -31,7 +33,7 @@ async function driveRequest(url: string, init?: RequestInit): Promise<Response> 
 
 export async function listFiles(folderId: string = 'root'): Promise<DriveFile[]> {
   const q = `'${folderId}' in parents and trashed = false`;
-  const fields = 'files(id, name, mimeType, parents)';
+  const fields = 'files(id, name, mimeType, parents, size, modifiedTime)';
   const orderBy = 'folder,name';
   const params = new URLSearchParams({ q, fields, orderBy, pageSize: '100' });
 
