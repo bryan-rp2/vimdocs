@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <title>VimDocs - Privacy Policy</title>
+    <style>
+      :root {
+        --base03: #002b36;
+        --base02: #073642;
+        --base01: #586e75;
+        --base0: #839496;
+        --base1: #93a1a1;
+        --blue: #268bd2;
+        --cyan: #2aa198;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        min-height: 100%;
+        background: var(--base03);
+        color: var(--base0);
+        font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+      .container {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 48px 24px;
+      }
+      h1 {
+        color: var(--blue);
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+      }
+      .updated {
+        color: var(--base01);
+        font-size: 0.85rem;
+        margin-bottom: 32px;
+      }
+      h2 {
+        color: var(--base1);
+        font-size: 1.1rem;
+        margin-top: 28px;
+        margin-bottom: 8px;
+      }
+      p, li {
+        margin-bottom: 12px;
+        color: var(--base0);
+      }
+      ul {
+        padding-left: 20px;
+        margin-bottom: 12px;
+      }
+      a {
+        color: var(--cyan);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 24px;
+        color: var(--blue);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="/">&larr; Back to VimDocs</a>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: March 3, 2026</p>
+
+      <h2>Overview</h2>
+      <p>VimDocs is a browser-based text editor that connects to your Google Drive. Your privacy is important to us. This policy explains what data VimDocs accesses, how it is used, and how it is stored.</p>
+
+      <h2>Data We Access</h2>
+      <p>When you sign in with Google, VimDocs requests access to the <strong>drive.file</strong> scope. This means VimDocs can only access files that you explicitly open or create through the app. It cannot access any other files in your Google Drive.</p>
+
+      <h2>Data Storage</h2>
+      <ul>
+        <li><strong>Authentication tokens</strong> are stored in your browser's localStorage and are never sent to any server other than Google's APIs.</li>
+        <li><strong>Your .vimrc settings</strong> are stored in your browser's localStorage.</li>
+        <li><strong>File contents</strong> are loaded into browser memory for editing and are written back to Google Drive when you save. File contents are never sent to any third-party server.</li>
+      </ul>
+
+      <h2>No Backend Server</h2>
+      <p>VimDocs is a fully client-side application. There is no backend server. All communication is directly between your browser and Google's APIs. We do not collect, store, or transmit any of your data.</p>
+
+      <h2>No Analytics or Tracking</h2>
+      <p>VimDocs does not include any analytics, tracking scripts, or third-party cookies.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>VimDocs uses the following Google APIs:</p>
+      <ul>
+        <li><strong>Google OAuth 2.0</strong> for authentication</li>
+        <li><strong>Google Drive API v3</strong> for reading and writing files</li>
+      </ul>
+      <p>Your use of these services is subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+      <h2>Data Deletion</h2>
+      <p>To remove all VimDocs data from your browser, clear your browser's localStorage for this site. To revoke VimDocs' access to your Google Drive, visit your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions</a> page.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about this privacy policy, please contact us at <a href="https://rp2.io">rp2.io</a>.</p>
+    </div>
+  </body>
+</html>
